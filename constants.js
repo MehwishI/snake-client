@@ -1,6 +1,6 @@
 const IP = "localhost";
 const PORT = 50541;
-const NAME = "SNK";
+const NAME = "MIQ";
 const MOVE_UP_KEY = "w";
 const MOVE_DOWN_KEY = "s";
 const MOVE_LEFT_KEY = "a";
