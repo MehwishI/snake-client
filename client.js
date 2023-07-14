@@ -8,34 +8,7 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write("Name: SNK");
-
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 500);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 2000);
+    conn.write("Say: Catch me!");
   });
 
   conn.setEncoding("utf-8");
