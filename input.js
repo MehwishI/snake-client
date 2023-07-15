@@ -5,6 +5,9 @@ const {
   MOVE_LEFT_KEY,
   MOVE_RIGHT_KEY,
   EXIT_KEY,
+  KEY_T,
+  KEY_U,
+  KEY_Y,
 } = require("./constants");
 
 let connection;
@@ -41,6 +44,15 @@ const handleUserInput = function (key) {
   if (key === MOVE_RIGHT_KEY) {
     //sending command to the server to move right
     connection.write("Move: right");
+  }
+  if (key === KEY_T) {
+    connection.write("Say: Lets Play!");
+  }
+  if (key === KEY_Y) {
+    connection.write("Say: Eat Fast!");
+  }
+  if (key === KEY_U) {
+    connection.write("Say: Go along!");
   }
 };
 
