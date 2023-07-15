@@ -10,8 +10,7 @@ const {
 let connection;
 
 const setupInput = function (conn) {
-  //setting local connection variable to conn object returned after connection
-  //is established
+  //setting local connection variable to conn object returned after connection is established
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -22,7 +21,7 @@ const setupInput = function (conn) {
   stdin.on("data", handleUserInput);
   return stdin;
 };
-
+//event handler for input
 const handleUserInput = function (key) {
   if (key === EXIT_KEY) {
     process.exit();
